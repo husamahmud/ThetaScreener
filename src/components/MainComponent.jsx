@@ -33,9 +33,7 @@ const MainComponent = () => {
   const renderTokenData = () => {
     console.log("Rendering Token Data:", selectedToken);
     
-    if (!selectedToken) {
-      return <Typography>Select a token to view details</Typography>;
-    }
+    if (!selectedToken) return null
 
     return (
       <Paper sx={{ p: 2, backgroundColor: '#2a2a2a', color: 'white', minWidth: '200px' }}>
